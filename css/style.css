@@ -3,10 +3,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.digital-image {
-  width: 300px;
-  height: auto;
-  display: block;
+.art-grid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+/* 4 photos of the landscapes */
+.art-grid1 img {
+ width: 100%;
+ height: auto;
+ display: block;
+ 
 }
 
 nav {
