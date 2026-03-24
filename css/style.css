@@ -1,6 +1,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+.digital-image {
+  width: 300px;
+  height: auto;
+  display: block;
+}
 
 nav {
   background: black;
