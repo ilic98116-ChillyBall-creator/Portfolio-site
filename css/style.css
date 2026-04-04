@@ -1,52 +1,60 @@
+/* base */
 body {
-  margin: 10;
-  font-family: Arial, sans-serif; 
-}
-
-.art-grid1 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 10px;
-  row-gap: 10px;
-}
-
-/* 4 photos of the landscapes */
-.art-grid1 img {
- width: 250px;
- height: 250px;
- display: block;
- 
-}
-
-.layout {
-  display: grid;
-
-  /* makes 4 zones like a square */
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 400px;
-  row-gap: 20px;
-}
-
-/* place first grid in top-left */
-.top-left {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-/* place second grid in bottom-right */
-.bottom-right {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-nav {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background: black;
+}
+
+/* 1200px centered content area */
+.page {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  background: grey;
   padding: 15px;
 }
 
 nav a {
   color: white;
-  margin-right: 15px;
+  margin-right: 150px;
   text-decoration: none;
 }
+
+/* Main layout (positions grids diagonally) */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+/* Position grids */
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.bottom-right {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Image grid (2x2) */
+.art-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Images */
+.art-grid1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
