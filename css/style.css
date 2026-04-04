@@ -1,20 +1,43 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  margin: 10;
+  font-family: Arial, sans-serif; 
 }
 
 .art-grid1 {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 /* 4 photos of the landscapes */
 .art-grid1 img {
- width: 100%;
- height: auto;
+ width: 250px;
+ height: 250px;
  display: block;
  
+}
+
+.layout {
+  display: grid;
+
+  /* makes 4 zones like a square */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 400px;
+  row-gap: 20px;
+}
+
+/* place first grid in top-left */
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* place second grid in bottom-right */
+.bottom-right {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 nav {
