@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
 .page {
   width: 1200px;
   margin: 0 auto;
@@ -22,47 +28,43 @@ h1 {
 
 h2 {
   margin: 0 0 15px 0;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   color: white;
 }
 
 .Business_Card1 img {
-  margin-bottom: 50px;
-  margin-inline: 100px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 60px;
 }
 
 .Business_Card2 img {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-inline: 100px;
-}
-
-.Business-Card1 img,
-.Business-Card2 img {
-  width: auto;
+  width: 100%;
   height: auto;
   display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .gallery-section {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
-.gallery-section.left {
-  text-align: left;
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-.gallery-section.right {
-  text-align: right;
+.gallery-section.right .section-content {
+  flex-direction: row;
 }
 
-.gallery-section.left .art-grid1 {
-  margin-right: auto;
-}
-
-.gallery-section.right .art-grid1 {
-  margin-left: auto;
+.gallery-section.left .section-content {
+  flex-direction: row;
 }
 
 .art-grid1 {
@@ -73,6 +75,7 @@ h2 {
   background: black;
   padding: 20px;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .art-grid1 img {
@@ -80,4 +83,35 @@ h2 {
   height: 180px;
   object-fit: cover;
   display: block;
+}
+
+.text-box {
+  width: 420px;
+  color: white;
+}
+
+.text-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* LEFT sections = images left, text right */
+.gallery-section.left .art-grid1 {
+  order: 1;
+}
+
+.gallery-section.left .text-box {
+  order: 2;
+  text-align: left;
+}
+
+/* RIGHT sections = text left, images right */
+.gallery-section.right .text-box {
+  order: 1;
+  text-align: left;
+}
+
+.gallery-section.right .art-grid1 {
+  order: 2;
 }
