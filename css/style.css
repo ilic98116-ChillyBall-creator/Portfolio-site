@@ -1,87 +1,85 @@
-<head>
-  <title>Ana Katarina Ilic Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">  
-</head>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
 
-<body>
-  <div class="page">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="digital.html">Digital</a>
-      <a href="analogue.html">Analogue</a>
-      <a href="ai.html">AI</a>
-      <a href="film.html">Film</a>  
-    </nav>
+.page {
+  width: 1200px;
+  margin: 0 auto;
+}
 
-    <h1>Digital</h1>
+nav {
+  background: black;
+  padding: 15px;
+}
 
-    <section class="Business_Card1">
-    <img src="images/digital/Business_Card1.png" alt="Hero statement with business card">
-    </section>
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
 
-    <section class="gallery-section left">
-      <h2>Landscape Photography</h2>
-      <div class="art-grid1">
-        <img src="images/digital/image_1.JPG" alt="Digital project">
-        <img src="images/digital/image_2.JPG" alt="Digital project">
-        <img src="images/digital/image_3.JPG" alt="Digital project">
-        <img src="images/digital/image_4.JPG" alt="Digital project">
-      </div>
-    </section>
+h1 {
+  margin: 30px 0;
+  font-size: 40px;
+}
 
-    <section class="gallery-section right">
-      <h2>Close-up Photography</h2>
-      <div class="art-grid1">
-        <img src="images/digital/image_5.JPG" alt="Digital project">
-        <img src="images/digital/image_6.JPG" alt="Digital project">
-        <img src="images/digital/image_7.JPG" alt="Digital project">
-        <img src="images/digital/image_8.JPG" alt="Digital project">
-      </div>
-    </section>
+h2 {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
 
-    <section class="gallery-section left">
-      <h2>Sport Photography</h2>
-      <div class="art-grid1">
-        <img src="images/digital/image_9.JPG" alt="Digital project">
-        <img src="images/digital/image_10.JPG" alt="Digital project">
-        <img src="images/digital/image_11.JPG" alt="Digital project">
-        <img src="images/digital/image_12.JPG" alt="Digital project">
-      </div>
-    </section>
+.Business_Card1 img {
+  margin-bottom: 60px;
+}
 
-    <section class="gallery-section right">
-      <h2>Profile Photography</h2>
-      <div class="art-grid1">
-        <img src="images/digital/image_13.JPG" alt="Digital project">
-        <img src="images/digital/image_14.JPG" alt="Digital project">
-        <img src="images/digital/image_15.JPG" alt="Digital project">
-        <img src="images/digital/image_16.JPG" alt="Digital project">
-      </div>
-    </section>
+.Business_Card2 img {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
 
-    <section class="gallery-section left">
-      <h2>Freelance Photography</h2>
-      <div class="art-grid1">
-        <img src="images/digital/image_17.JPG" alt="Digital project">
-        <img src="images/digital/image_18.JPG" alt="Digital project">
-        <img src="images/digital/image_19.JPG" alt="Digital project">
-        <img src="images/digital/image_20.JPG" alt="Digital project">
-      </div>
-    </section>
+.Business-Card1 img,
+.Business-Card2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    <section class="gallery-section right">
-      <h2>Campaign Photography</h2>
-      <div class="art-grid1">
-        <img src="images/digital/image_21.JPG" alt="Digital project">
-        <img src="images/digital/image_22.JPG" alt="Digital project">
-        <img src="images/digital/image_23.JPG" alt="Digital project">
-        <img src="images/digital/image_24.JPG" alt="Digital project">
-      </div>
-    </section>
+.gallery-section {
+  margin-bottom: 70px;
+}
 
-    <footer class="Business_Card2">
-    <img src="images/digital/Business_Card2.png"> 
-    </footer>
-  </div>
-</body>
-</html>
+.gallery-section.left {
+  text-align: left;
+}
+
+.gallery-section.right {
+  text-align: right;
+}
+
+.gallery-section.left .art-grid1 {
+  margin-right: auto;
+}
+
+.gallery-section.right .art-grid1 {
+  margin-left: auto;
+}
+
+.art-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 560px;
+  background: #dddddd;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.art-grid1 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
