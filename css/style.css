@@ -1,14 +1,18 @@
+
+/* Work On Typography last */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: black;
 }
 
+/* Page Requirement */
 .page {
   width: 1200px;
   margin: 0 auto;
 }
 
+/* navigation bar design; add pixel design and animation later*/
 nav {
   background: #0814C9;
   padding: 15px;
@@ -32,7 +36,7 @@ h2 {
   font-weight: normal;
   color: white;
 }
-
+/* Buisness card image / hero image goes at the top of every page for now */
 .Business_Card1 img {
   width: 100%;
   height: auto;
@@ -40,6 +44,7 @@ h2 {
   margin-bottom: 60px;
 }
 
+/* Home page  */
 .portfolio_pic img {
   width: 70%;
   height: auto;
@@ -92,6 +97,7 @@ color: white;
   margin: 0;
 }
 
+/* Home Page second page with tool kit under the jumpscare profile pic */
 .toolkit-bar {
   background: #A46D2F;
   padding: 30px;
@@ -103,6 +109,7 @@ color: white;
   margin-bottom: 20px;
 }
 
+/* App Icon layout */
 .toolkit-grid {
   display: flex;
   justify-content: center;
@@ -116,3 +123,149 @@ width: 80px;
 height: 80px;
 background: #F69501;
 display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+}
+
+.tool-box img {
+max-width: 70%;
+max-height: 70%;
+object-fit: contain;
+}
+
+/* Home page section / similar to second nave layout to "choose their own Journey" */
+.journey-section {
+  margin-bottom: 80px;
+}
+
+.journey-panel {
+  background: red;
+  padding: 60px 50px 80px 50px;
+  box-sizing: border-box;
+}
+
+.journey-title {
+color: white;
+text-align: center;
+font-size: 54px;
+font-weight: normal;
+line-height: 1.1;
+margin: 0 0 60px 0;
+letter-spacing: 2px;
+}
+
+.bold-word {
+  font-weight: bold;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.journey-item {
+  text-align: center;
+}
+
+.journey-item a {
+  text-decoration: none;
+}
+
+.journey-item img {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.journey-item p {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+
+/* Buisness card image for contact info that goes on the bottom of each page */
+.Business_Card2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* This is in the Digital section and all the css code for making the checkered board layout */
+.gallery-section {
+  margin-bottom: 80px;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.gallery-section.right .section-content {
+  flex-direction: row;
+}
+
+.gallery-section.left .section-content {
+  flex-direction: row;
+}
+
+.art-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 560px;
+  background: black;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.art-grid1 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.text-box {
+  width: 420px;
+  color: white;
+}
+
+.text-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* LEFT sections = images left, text right This is for Digital*/
+.gallery-section.left .art-grid1 {
+  order: 1;
+}
+
+.gallery-section.left .text-box {
+  order: 2;
+  text-align: left;
+}
+
+/* RIGHT sections = text left, images right This is for "Digital" */
+.gallery-section.right .text-box {
+  order: 1;
+  text-align: left;
+}
+
+.gallery-section.right .art-grid1 {
+  order: 2;
+}
+
