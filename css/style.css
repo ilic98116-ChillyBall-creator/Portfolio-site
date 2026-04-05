@@ -140,9 +140,10 @@ object-fit: contain;
 }
 
 .journey-panel {
-  background: red;
+  background: #A46D2F;
   padding: 60px 50px 80px 50px;
   box-sizing: border-box;
+  border-radius: 40px;
 }
 
 .journey-title {
@@ -177,10 +178,11 @@ letter-spacing: 2px;
 .journey-item img {
   width: 100%;
   max-width: 180px;
-  height: 180px;
+  height: 250px;
   object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
+  border-radius: 10px;
 }
 
 .journey-item p {
