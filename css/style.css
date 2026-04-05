@@ -94,32 +94,37 @@ color: white;
 
 .toolkit-bar {
   background: #A46D2F;
-  padding: 30px 30px 40px 30px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px; 
+  padding: 30px;
+  border-radius: 40px;
 }
 
 .toolkit-bar h3 {
   color: white;
-  font-size: 28px;
-  font-weight: normal;
-  margin: 0 0 25px 0;
+  margin-bottom: 20px;
 }
 
 .toolkit-grid {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 70px;
 }
 
 .tool-box {
-background: green;
-color: yellow;
-padding: 20px 24px;
-min-width: 110px;
-text-align: center;
-font-size: 28px;
-box-sizing: border-box;
+width: 80px;
+height: 80px;
+background: #D48B33;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+}
+
+.tool-box img {
+max-width: 70%;
+max-height: 70%;
+object-fit: contain;
 }
 
 .Business_Card2 img {
