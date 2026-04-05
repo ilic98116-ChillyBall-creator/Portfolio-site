@@ -51,7 +51,7 @@ h2 {
 }
 
 .about-card {
-  background: red;
+  background: #A46D2F;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -93,14 +93,14 @@ color: white;
 }
 
 .toolkit-bar {
-  background: blue;
+  background: #A46D2F;
   padding: 30px 30px 40px 30px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px; 
 }
 
 .toolkit-bar h3 {
-  color: grey;
+  color: white;
   font-size: 28px;
   font-weight: normal;
   margin: 0 0 25px 0;
