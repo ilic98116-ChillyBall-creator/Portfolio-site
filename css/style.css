@@ -1,272 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Katarina Ilic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">  
+</head>
 
-/* Work On Typography last */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: black;
-}
+<body>
+  <div class="page">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="digital.html">Digital</a>
+      <a href="analogue.html">Analogue</a>
+      <a href="ai.html">AI</a>
+      <a href="film.html">Film</a>  
+    </nav>
 
-/* Page Requirement */
-.page {
-  width: 1200px;
-  margin: 0 auto;
-}
+    <section class="Business_Card1">
+      <img src="images/digital/Business_Card1.png" alt="Hero statement with business card">
+    </section>  
+    
+    
+    <section class="about-section">
+    <div class="about-card">
+    <div class="about-top">
+    <div class="about-image">
+    <img src="images/digital/portfolio_pic.jpeg" alt="Photo of myself">  
+    </div> 
+    <div class="about-text">
+    <h2> About Me </h2>
+    <p>
+    Welcome! I'm Ana and I LOVE narrative design. My skills adapt from coding fundementals to the presentation of buisness and creative design. My passion stemmed in highschool when I took IB art without the required credentials from grade 9 and 10; however, I had the confidence in myself to display my efforts in sketching, sculpting and animation. Later in my academic career I was introduced to coding where my passion for gaming since childhood became a digital reality between my finger tips. Beyond that I discovered the arts of film and photography and developed a keen sense for close-up photography and landscape admiring the beauty of both architecture and natural beauty. And finally economics, previously in highschool I took IB econ as a mandatory course but in university when I encountered Andrew Gibson, he inspired me with a deep passion of how our society is constructed and developing throughout our presence from every willingness to pay as he once called it "girl math".
+    </p>
+  </div>  
+</div> 
+      
+ <div class="toolkit-bar">
+ <h3> My Toolkit </h3> 
+ <div class="toolkit-grid">
+ <div class="tool-box">
+ <img src="images/digital/Excel.jpg" alt="Excel Icon"> </div>
+ <div class="tool-box">
+ <img src="images/digital/P5.png" alt="P5.js icon"> </div> 
+ <div class="tool-box">
+ <img src="images/digital/Python-logo.png" alt="python icon"> </div> 
+ <div class="tool-box">
+ <img src="images/digital/Racket-logo.svg" alt="racket icon"> </div> 
+ <div class="tool-box">
+ <img src="images/digital/figma.png" alt="figma icon"> </div>   
+ <div class="tool-box">
+ <img src="images/digital/Adobe_expres.png" alt="Adobe express icon"> </div>  
+ <div class="tool-box">
+  <img src="images/digital/Adobe_Firefly_Logo.png" alt="Firefly icon"> </div>   
+   </div>
+  </div>         
+ </div>
+</section>
+    
+<section class="journey-section">
+<div class="journey-panel">
+<h2 class="journey-title">
+<span class="bold-word"> CHOOSE </span> your Journey AND <br>
+I'll tell YOU an <br>
+Intresting STORY
+</h2>
 
-/* navigation bar design; add pixel design and animation later*/
-nav {
-  background: #0814C9;
-  padding: 15px;
-}
+<div class="journey-grid">
+<div class="journey-item">
+<a href="digital.html">
+<img src="images/digital/image_16.JPG" alt="Digital Preview">   
+<p> Digital </p>
+</a>
+</div>  
+  
+<div class="journey-item">
+<a href="analogue.html">
+<img src="images/analogue/image_27.jpg" alt="Analogue Preview">   
+<p> Analogue </p>
+</a>
+</div> 
+  
+<div class="journey-item">
+<a href="ai.html">
+<img src="images/ai/LifeGuard.png" alt="AI Preview">   
+<p> AI </p>
+</a>
+</div>   
+  
+<div class="journey-item">
+<a href="film.html">
+<img src="images/film/IDK.gif" alt="Motion Picture Preview">   
+<p> Motion Picture </p>
+</a>
+</div>  
+ </div>
+  </div>    
+   </section>
 
-nav a {
-  color: white;
-  margin-right: 150px;
-  text-decoration: none;
-}
-
-h1 {
-  margin: 30px 0;
-  font-size: 40px;
-  color: white;
-}
-
-h2 {
-  margin: 0 0 15px 0;
-  font-size: 24px;
-  font-weight: normal;
-  color: white;
-}
-/* Buisness card image / hero image goes at the top of every page for now */
-.Business_Card1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 60px;
-}
-
-/* Home page  */
-.portfolio_pic img {
-  width: 70%;
-  height: auto;
-  display: block;
-}
-
-.about-section {
-  margin-bottom: 80px;
-}
-
-.about-card {
-  background: #A46D2F;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.about-top {
- display: flex;
- align-items: stretch;
-}
-
-.about-image {
-width: 58%  
-}
-
-.about-image img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-}
-
-.about-text {
-width: 42%;
-padding: 60px 40px 30px 40px;
-box-sizing: border-box;
-color: white;
-}
-
-.about-text h2 {
-  font-size: 48px;
-  font-weight: normal;
-  margin-bottom: 30px;
-  color: white;
-}
-
-.about-text p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Home Page second page with tool kit under the jumpscare profile pic */
-.toolkit-bar {
-  background: #A46D2F;
-  padding: 30px;
-  border-radius: 40px;
-}
-
-.toolkit-bar h3 {
-  color: white;
-  margin-bottom: 20px;
-}
-
-/* App Icon layout */
-.toolkit-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 70px;
-}
-
-.tool-box {
-width: 80px;
-height: 80px;
-background: #F69501;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 10px;
-}
-
-.tool-box img {
-max-width: 70%;
-max-height: 70%;
-object-fit: contain;
-}
-
-/* Home page section / similar to second nave layout to "choose their own Journey" */
-.journey-section {
-  margin-bottom: 80px;
-}
-
-.journey-panel {
-  background: #A46D2F;
-  padding: 60px 50px 80px 50px;
-  box-sizing: border-box;
-  border-radius: 40px;
-}
-
-.journey-title {
-color: white;
-text-align: center;
-font-size: 54px;
-font-weight: normal;
-line-height: 1.1;
-margin: 0 0 60px 0;
-letter-spacing: 2px;
-}
-
-.bold-word {
-  font-weight: bold;
-}
-
-.journey-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  align-items: start;
-}
-
-.journey-item {
-  text-align: center;
-}
-
-.journey-item a {
-  text-decoration: none;
-}
-
-.journey-item img {
-  width: 100%;
-  max-width: 180px;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
-}
-
-.journey-item p {
-  color: white;
-  font-size: 22px;
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-
-/* Buisness card image for contact info that goes on the bottom of each page */
-.Business_Card2 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-/* This is in the Digital section and all the css code for making the checkered board layout */
-.gallery-section {
-  margin-bottom: 80px;
-}
-
-.section-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-
-.gallery-section.right .section-content {
-  flex-direction: row;
-}
-
-.gallery-section.left .section-content {
-  flex-direction: row;
-}
-
-.art-grid1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  width: 560px;
-  background: black;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
-
-.art-grid1 img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-}
-
-.text-box {
-  width: 420px;
-  color: white;
-}
-
-.text-box p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* LEFT sections = images left, text right This is for Digital*/
-.gallery-section.left .art-grid1 {
-  order: 1;
-}
-
-.gallery-section.left .text-box {
-  order: 2;
-  text-align: left;
-}
-
-/* RIGHT sections = text left, images right This is for "Digital" */
-.gallery-section.right .text-box {
-  order: 1;
-  text-align: left;
-}
-
-.gallery-section.right .art-grid1 {
-  order: 2;
-}
+  </div> 
+</body>  
+</html>
