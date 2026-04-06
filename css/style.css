@@ -277,9 +277,10 @@ letter-spacing: 2px;
   margin: 80px 0;
 }
 
-.anologue-container {
-  background: red;
+.analogue-container {
+  background: #D48B33;
   padding: 40px;
+  border-radius: 40px;
 }
 
 .analogue-grid {
@@ -294,10 +295,18 @@ letter-spacing: 2px;
  width: 100%;
  height: auto;
  display: block;
+ border-radius: 10px;
 }
 /* text*/
-.analogue-text h3 {
+.analogue-text  h3 {
   font-size: 24px;
-  color: green;
+  color: white;
   margin: 0;
+}
+
+.analogue-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: white;
+  max-width: auto;
 }
