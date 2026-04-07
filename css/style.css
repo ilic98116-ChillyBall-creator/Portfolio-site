@@ -76,6 +76,24 @@ p {
   margin-bottom: 60px;
 }
 
+.Business_Card1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 60px;
+  animation: heroFadeUp 0.8s ease;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Home page  */
 .portfolio_pic img {
   width: 70%;
@@ -227,8 +245,15 @@ p {
   margin: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Funnel Display", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
+
+.journey-item a:hover p {
+  color: #0814C9;
+  transform: scale(1.05);
+}
+
 
 /* Buisness card image for contact info that goes on the bottom of each page */
 .Business_Card2 img {
@@ -407,3 +432,11 @@ p {
   border: none;
 }
 
+.email-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  color: #0814C9;
+}
