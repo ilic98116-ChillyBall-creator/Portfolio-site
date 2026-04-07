@@ -84,6 +84,7 @@ p {
   animation: heroFadeUp 0.8s ease;
 }
 
+/* This is where I used chat gpt to teach me how to do an animation; for user experiance I wanted the viewer to know they'er on a different page when they click the nav bar so instead of importing 5 different hero cards I simply added the animation using chat-gpt */
 @keyframes heroFadeUp {
   from {
     opacity: 0;
@@ -94,6 +95,8 @@ p {
     transform: translateY(0);
   }
 }
+/* This is where the use of chat-gpt ends */
+
 /* Home page  */
 .portfolio_pic img {
   width: 70%;
@@ -432,6 +435,7 @@ p {
   border: none;
 }
 
+/* Required email link */
 .email-link {
   color: white;
   text-decoration: underline;
@@ -440,3 +444,20 @@ p {
 .email-link:hover {
   color: #0814C9;
 }
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: yellow;
+}
+
